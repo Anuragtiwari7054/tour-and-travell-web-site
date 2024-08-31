@@ -1,0 +1,310 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'robot',sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    color:white;
+    padding: 15px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-inline: 22px;
+    color:white;
+    font-size: 22px;
+}
+
+ul li a:hover{
+color: black;
+cursor: pointer;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons i{
+    font-size: 25px;
+    color: black;
+    margin-inline: 20px;
+}
+
+.logo{
+    font-size: 20px;
+    color: black;
+}
+
+#bar{
+    display: none;
+}
+
+.main{
+    background-image: url("images/travell.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.maintext{
+    /* position: relative; */
+    text-align: center;
+    color: white;
+    font-size: 30px;
+
+}
+
+.maintext button{
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    margin-top: 20px;
+    color: white;
+    margin-top: 8%
+}
+
+.maintext button:hover{
+    background-color: orange;
+}
+
+.head{
+    text-align: center;
+    padding: 70px;
+}
+
+.head span{
+    color: orange;
+} 
+
+.booking{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking img{
+    width: 550px;
+    border-radius: 5px;
+}
+
+.form{
+    border-radius: 4px;
+    margin-inline: 25px;
+    width: 320px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 4px 6px silver;
+}
+
+.form input{
+    width: 90%;
+    padding: 8px;
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+.form p{
+    margin-top: 20px;
+}
+
+.form button{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.packages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.packages .card{
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    margin-inline: 20px;
+    box-shadow: 0px 4px 4px 6px silver;
+    margin-top: 11px;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+}
+
+.card h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.places img{
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0px 4px 4px 6px silver;
+}
+
+.places h3 {
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.places p {
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.contact img{
+    width: 550px;
+    height: 350px;
+}
+
+.contactform{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 4px 4px 6px silver;
+    padding: 22px;
+    margin-left: 20px;
+}
+
+.contact input{
+    width: 90%;
+    padding: 6px;
+    font-size: 16px;
+    margin-top: 2px;
+    
+}
+
+.conatact p{
+    margin-top: 13px;
+}
+
+.connect .head{
+    margin-top: 20px;
+}
+
+.contactform button{
+    width: 80px;
+    height: 28px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+   margin-top: 50px;
+   height: 200px;
+}
+
+.footer .text {margin-top: 20px;}
+
+.text p{
+    margin-top:11px ;
+}
+
+.loginpage{
+    display: none;
+}
+
+.active{
+    display: block;
+    width: 300px;
+    background-color: white;
+    padding: 11px;
+    position: fixed;
+    top: 12%;
+    right: 2%;
+}
+
+.active input{
+    width: 90%;
+    padding: 6px;
+    margin-top: 13px;
+}
+
+.active button{
+      width: 80px;
+      height: 28px;
+      background-color: orange;
+      color: white;
+      font-size: 16px;
+      border: none;
+      margin-top: 15px;
+}
+
+@media  screen and (max-width:900px) {
+    ul{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+    .booking img{
+        width: 90%;
+    }
+    .contact img{
+            width: 90%;
+    }
+}
+
+@media  screen and (max-width:600px){
+    .maintext h1{
+        font-size: 30px;
+    }
+    .contactform{
+        width: 60%;
+    }
+}
+
